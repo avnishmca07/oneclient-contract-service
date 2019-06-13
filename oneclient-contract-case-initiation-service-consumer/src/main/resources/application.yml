@@ -1,0 +1,9 @@
+customerservice:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8081
+
+stubrunner:
+  idsToServiceIds:
+    oneclient-contract-customer-service-producer: customerservice
